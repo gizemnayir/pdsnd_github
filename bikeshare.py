@@ -153,7 +153,7 @@ def trip_duration_stats(df):
     avg_travel_time%=60
     seconds=avg_travel_time
 
-    print('Average trip duraiton: {} days, {} hours, {} minutes, {} seconds'.format(day, hour, minutes, seconds,))
+    print('Average trip duration: {} days, {} hours, {} minutes, {} seconds'.format(day, hour, minutes, seconds,))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -179,17 +179,14 @@ def user_stats(df):
     print('-'*40)
 
 def display_raw_data(df):
-    """displays raw data as long as user request to see"""
-    if input("Would you like to see a few lines of raw data? Yes/No\n").lower()=='yes' :
-        x=int(input("How many lines would you like to see?\n"))
-        print(df.iloc[:x]) #displays x lines of raw data
-        while True:
-            if input("Would you like to see more lines of raw data? Yes/No\n").lower()=='yes' :
-                i=int(input("How many more lines would you like to see?\n"))
-                print(df.iloc[x:i+x]) #displays x+i lines of raw data if user requests
-                i+=x
-            else:
-                break
+    """displays 5 line of raw data as long as user request to see"""
+    i=0
+    while True:
+        if input("Would you like to see 5 lines of raw data? Yes/No\n").lower()=='yes' :
+            print(df.iloc[i:i+5]) #displays x+i lines of raw data if user requests
+            i+=5
+        else:
+            break
 
 def main():
     while True:
