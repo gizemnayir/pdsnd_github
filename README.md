@@ -11,8 +11,8 @@ Bikeshare Project - Udacity Programming for Data Science with Python Nanodegree 
 This project aims to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington by providing some statistics with an interaction with the user.
 
 ### Files used
-chicago.csv
-new_york_city.csv
+chicago.csv\
+new_york_city.csv\
 washington.csv
 
 ### Credits
