@@ -153,7 +153,7 @@ def trip_duration_stats(df):
     avg_travel_time%=60
     seconds=avg_travel_time
 
-    print('Average trip duraiton: {} days, {} hours, {} minutes, {} seconds'.format(day, hour, minutes, seconds,))
+    print('Average trip duration: {} days, {} hours, {} minutes, {} seconds'.format(day, hour, minutes, seconds,))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
